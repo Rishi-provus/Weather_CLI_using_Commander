@@ -19,16 +19,17 @@ async function fetch_weather_data(location,option) {
       throw new Error("API request failed");
     }
     const data = await response.json();
+    const loc=data.current;
     console.log()
     console.log(`Weather report of ${data.location.name}`);
     if(option.f){
-      console.log(`temprature ${data.current.temp_f} F`);
+      console.log(`temprature ${loc.temp_f} F`);
     }
     else{
-      console.log(`temprature ${data.current.temp_c} C`);
+      console.log(`temprature ${loc.temp_c} C`);
     }
     
-    console.log(`weather ${data.current.condition.text}`);
+    console.log(`weather ${loc.condition.text}`);
 
   }
   catch (error) {
