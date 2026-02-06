@@ -1,0 +1,27 @@
+{
+  "name": "weather_cli_using_commander",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Rishi-provus/Weather_CLI_using_Commander#readme",
+  "bugs": {
+    "url": "https://github.com/Rishi-provus/Weather_CLI_using_Commander/issues"
+  },
+  "bin": {
+    "weather": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishi-provus/Weather_CLI_using_Commander.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "dotenv": "^17.2.4"
+  }
+}
